@@ -46,7 +46,7 @@
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <version>5.3.2</version>
+                <version>6.0.2</version>
                 <configuration>
                     <suppressionFile>dependency-checker-exclude.xml</suppressionFile>
                     <failBuildOnCVSS>7</failBuildOnCVSS>
@@ -64,13 +64,13 @@
 
     <profiles>
         <profile>
-            <id>prd</id>
+            <id>dependency-check</id>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.owasp</groupId>
                         <artifactId>dependency-check-maven</artifactId>
-                        <version>5.3.2</version>
+                        <version>6.0.2</version>
                         <configuration>
                             <failBuildOnCVSS>7</failBuildOnCVSS>
                         </configuration>
